@@ -21,7 +21,7 @@ from models.usermodel import User
 app = Flask(__name__)
 CORS(app)
 
-
+# register
 @app.route("/register",methods=["POST"])
 def create_user():
     data = request.get_json()
